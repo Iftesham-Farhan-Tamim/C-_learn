@@ -146,23 +146,23 @@
 // output:
 // 2 3 5
 // ............................................................................................
-#include<bits/stdc++.h>
-using namespace std;
+// #include<bits/stdc++.h>
+// using namespace std;
 
-int main() {
-    vector<int> vec;
-    vec.push_back(1);
-    vec.push_back(2);
-    vec.push_back(3);
-    vec.push_back(4);
-    vec.push_back(5);
+// int main() {
+//     vector<int> vec;
+//     vec.push_back(1);
+//     vec.push_back(2);
+//     vec.push_back(3);
+//     vec.push_back(4);
+//     vec.push_back(5);
 
-    vec.erase(vec.begin() + 1, vec.begin() + 3);  // removes element from idx (1-2)
+//     vec.erase(vec.begin() + 1, vec.begin() + 3);  // removes element from idx (1-2)
 
-    for(int ele : vec) {
-        cout << ele << " ";
-    }
-}
+//     for(int ele : vec) {
+//         cout << ele << " ";
+//     }
+// }
 
 // output:
 // 1 4 5
@@ -184,7 +184,7 @@ int main() {
 //         cout << ele << " ";
 //     }
 
-//     // vec.clear()  // it will remove all the element, but capacity remains same. 
+//     // vec.clear();  // it will remove all the element, but capacity remains same. 
 // }
 
 // output:
