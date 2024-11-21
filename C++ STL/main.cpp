@@ -680,8 +680,9 @@
 // int main() {
 
 // 	int arr[5] = {3, 5, 1, 8, 2};
+//     int n = sizeof(arr) / sizeof(arr[0]);
 
-// 	sort(arr, arr + 5);
+// 	sort(arr, arr + n);
 
 // 	for (int val : arr) {
 // 		cout << val << " ";
