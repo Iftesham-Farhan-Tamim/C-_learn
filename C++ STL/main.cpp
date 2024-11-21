@@ -308,15 +308,124 @@
 // 3 1
 // 2
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+
+// 	pair<int, int> p = {1, 5};
+
+// 	cout << p.first << endl;
+// 	cout << p.second << endl;
+
+
+//     pair<string, int> p1 = {"tamim", 5};
+
+// 	cout << p1.first << endl;
+// 	cout << p1.second;
+// }
+
+// output:
+// 1
+// 5
+// tamim
+// 5
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+
+// 	pair<int, pair<char, int>> p = {1, {'a', 3}};
+
+// 	cout << p.first << endl;
+// 	cout << p.second.first << endl;
+// 	cout << p.second.second;
+// }
+
+// output:
+// 1
+// a
+// 3
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+
+// 	vector<pair<int, int>> vec = {{1, 2}, {2, 3}, {3, 4}};
+
+// 	vec.push_back({4, 5});  // insert
+// 	vec.emplace_back(6, 7);  // in-place objects create
+
+// 	// for (pair<int, int> p : vec) {
+// 	// 	cout << p.first << " " << p.second << endl;
+// 	// }
+
+// 	for (auto p : vec) {
+// 		cout << p.first << " " << p.second << endl;
+// 	}
+// }
+
+// output:
+// 1 2
+// 2 3
+// 3 4
+// 4 5
+// 6 7
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+//     stack<int> s;
+
+//     s.push(1);
+//     s.push(2);
+//     s.push(3);
+
+//     cout << "top = " << s.top() << endl;  // top = 3
+
+//     while(!s.empty()) {
+//         cout << s.top() << " ";  // 3 2 1 
+//         s.pop();
+//     }
+
+//     cout << endl;
+
+//     stack<int> s2;
+//     s2.swap(s);
+
+//     cout << "s size : " << s.size() << endl;  // s size : 0
+//     cout << "s2 size : " << s2.size() << endl;  // s2 size : 0 (0 because of pop())
+// }
+
+// output:
+// top = 3
+// 3 2 1 
+// s size : 0
+// s2 size : 0
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+//     queue<int> q;
+
+//     q.push(1);
+//     q.push(2);
+//     q.push(3);
+
+//     while(!q.empty()) {
+//         cout << q.front() << " ";
+//         q.pop();
+//     }
+
+//     cout << endl;
+// }
+
+// output:
+// 1 2 3
 // ............................................................................................
 
 // ............................................................................................
