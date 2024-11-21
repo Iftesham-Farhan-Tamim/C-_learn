@@ -427,11 +427,80 @@
 // output:
 // 1 2 3
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+//     priority_queue<int> q;
+
+//     q.push(5);
+//     q.push(3);
+//     q.push(10);
+//     q.push(4);
+
+//     while(!q.empty()) {
+//         cout << q.top() << " ";
+//         q.pop();
+//     }
+// }
+
+// output:
+// 10 5 4 3
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+//     priority_queue<int, vector<int>, greater<int>> q;
+
+//     q.push(5);
+//     q.push(3);
+//     q.push(10);
+//     q.push(4);
+
+//     while(!q.empty()) {
+//         cout << q.top() << " ";
+//         q.pop();
+//     }
+// }
+
+// output:
+// 3 4 5 10 
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+
+// 	map<string, int> m;
+
+// 	m["tv"] = 100;
+// 	m["laptop"] = 100;
+// 	m["mouse"] = 50;
+
+// 	m.emplace("keyboard", 25);
+
+//     // m.erase("mouse");  // it will rease the mouse
+
+// 	for (auto p : m) {
+// 		cout << p.first << " " << p.second << endl;
+// 	}
+
+// 	cout << "count = " << m.count("laptop") << endl;
+
+//     if (m.find("camera") != m.end()) {
+// 		cout << "found\n";
+// 	} else {
+// 		cout << "not-found\n";
+// 	}
+// }
+
+// output:
+// keyboard 25
+// laptop 100
+// mouse 50
+// tv 100
+// count = 1
 // ............................................................................................
 
 // ............................................................................................
