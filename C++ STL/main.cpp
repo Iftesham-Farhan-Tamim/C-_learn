@@ -502,13 +502,94 @@
 // tv 100
 // count = 1
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+
+// 	map<string, int> m;
+
+// 	m.emplace("tv", 100);
+// 	m.emplace("tv", 100);
+// 	m.emplace("tv", 100);
+// 	m.emplace("tv", 100);
+
+// 	for (auto p : m) {
+// 		cout << p.first << p.second << endl;
+// 	}
+// }
+
+// output:
+// tv100
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+
+// 	multimap<string, int> m;
+
+// 	m.emplace("tv", 100);
+// 	m.emplace("tv", 100);
+// 	m.emplace("tv", 100);
+// 	m.emplace("tv", 100);
+
+// 	for (auto p : m) {
+// 		cout << p.first << p.second << endl;
+// 	}
+// }
+
+// output:
+// tv100
+// tv100
+// tv100
+// tv100
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+
+// 	multimap<string, int> m;
+
+// 	m.emplace("tv", 100);
+// 	m.emplace("tv", 100);
+// 	m.emplace("tv", 100);
+// 	m.emplace("tv", 100);
+
+// 	m.erase("tv");  // Erase all occurrences of "tv"
+
+// 	for (auto p : m) {
+// 		cout << p.first << p.second << endl;
+// 	}
+// }
+
+// output:
+// 
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+
+// 	multimap<string, int> m;
+
+// 	m.emplace("tv", 100);
+// 	m.emplace("tv", 100);
+// 	m.emplace("tv", 100);
+// 	m.emplace("tv", 100);
+
+// 	m.erase(m.find("tv"));  // erase one occurrences of "tv"
+
+// 	for (auto p : m) {
+// 		cout << p.first << p.second << endl;
+// 	}
+// }
+
+// output:
+// tv100
+// tv100
+// tv100
 // ............................................................................................
 
 // ............................................................................................
