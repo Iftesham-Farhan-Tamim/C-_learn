@@ -501,6 +501,7 @@
 // mouse 50
 // tv 100
 // count = 1
+// not-found
 // ............................................................................................
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -591,21 +592,194 @@
 // tv100
 // tv100
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+
+// 	set<int> s;
+
+// 	s.insert(1);
+// 	s.insert(2);
+// 	s.insert(3);
+// 	s.insert(4);
+// 	s.insert(5);
+
+// 	s.insert(1);
+// 	s.insert(2);
+// 	s.insert(3);
+
+// 	cout << s.size() << endl;
+//     cout << "lower bound = " << *(s.lower_bound(4)) << endl;  // if the 4 is not present, then it will return 5.
+//     cout << "upper bound = " << *(s.upper_bound(4)) << endl;
+
+// 	for (auto val : s) {
+// 		cout << val << " ";
+// 	}
+// }
+
+// output:
+// 5
+// lower bound = 4
+// upper bound = 5
+// 1 2 3 4 5 
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+
+// 	multiset<int> s;
+
+// 	s.insert(1);
+// 	s.insert(2);
+// 	s.insert(3);
+// 	s.insert(4);
+// 	s.insert(5);
+
+// 	s.insert(1);
+// 	s.insert(2);
+// 	s.insert(3);
+
+// 	for (auto val : s) {
+// 		cout << val << " ";
+// 	}
+// }
+
+// output:
+// 1 1 2 2 3 3 4 5   // it will print all the occurrences
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+
+// 	unordered_set<int> s;
+
+// 	s.insert(1);
+// 	s.insert(2);
+// 	s.insert(3);
+// 	s.insert(4);
+// 	s.insert(5);
+
+// 	s.insert(1);
+// 	s.insert(2);
+// 	s.insert(3);
+
+// 	for (auto val : s) {
+// 		cout << val << " ";
+// 	}
+// }
+
+// output:
+// 5 4 3 2 1 
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+
+// 	int arr[5] = {3, 5, 1, 8, 2};
+
+// 	sort(arr, arr + 5);
+
+// 	for (int val : arr) {
+// 		cout << val << " ";
+// 	}
+// }
+
+// output:
+// 1 2 3 5 8
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+
+// 	vector<int> vec = {3, 5, 1, 8, 2, 4};
+
+// 	sort(vec.begin(), vec.end());
+
+// 	for (int val : vec) {
+// 		cout << val << " ";
+// 	}
+// }
+
+// output:
+// 1 2 3 4 5 8 
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+
+// 	vector<int> vec = {3, 5, 1, 8, 2, 4};
+
+// 	sort(vec.begin(), vec.end(), greater<int>());
+
+// 	for (int val : vec) {
+// 		cout << val << " ";
+// 	}
+// }
+
+// output:
+// 8 5 4 3 2 1 
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// int main() {
+
+// 	vector<pair<int, int>> vec = {{3, 1}, {2, 1}, {7, 1}, {5, 2}};
+
+// 	sort(vec.begin(), vec.end());
+
+// 	for (auto p : vec) {
+// 		cout << p.first << " " << p.second << endl;
+// 	}
+// }
+
+// output:
+// 2 1
+// 3 1
+// 5 2
+// 7 1
 // ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
+// bool comparator(pair<int, int> p1, pair<int, int> p2) {
+// 	if (p1.second < p2.second) {
+// 		return true;
+// 	}
+
+// 	if (p1.second > p2.second) {
+// 		return false;
+// 	}
+
+// 	if (p1.first < p2.first) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+
+// int main() {
+
+// 	vector<pair<int, int>> vec = {{3, 1}, {2, 1}, {7, 1}, {5, 2}};
+
+// 	sort(vec.begin(), vec.end(), comparator);
+
+// 	for (auto p : vec) {
+// 		cout << p.first << " " << p.second << endl;
+// 	}
+// }
+
+// output:
+// 2 1
+// 3 1
+// 7 1
+// 5 2
 // ............................................................................................
 
 // ............................................................................................
